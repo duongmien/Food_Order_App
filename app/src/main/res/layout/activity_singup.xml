@@ -7,7 +7,7 @@
     tools:context=".Singup">
 
     <ImageView
-        android:id="@+id/img_login"
+        android:id="@+id/img_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-450dp"
@@ -88,6 +88,7 @@
         android:textColor="@color/white"
         android:textSize="23dp"
         android:textStyle="bold" />
+
     <TextView
         android:id="@+id/text_signin"
         android:layout_width="wrap_content"

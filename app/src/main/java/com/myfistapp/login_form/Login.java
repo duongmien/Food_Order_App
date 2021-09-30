@@ -18,7 +18,7 @@ public class Login extends AppCompatActivity {
     TextView text_singin, text_sigup, text_forgetpass;
     EditText username, pass;
     Button bt_signin;
-    Animation topAnim, bottomAnim;
+    Animation topAnim, bottomAnim, leftAnim;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +27,7 @@ public class Login extends AppCompatActivity {
 //        Set Animation
         topAnim= AnimationUtils.loadAnimation(this, R.anim.top_ani);
         bottomAnim= AnimationUtils.loadAnimation(this, R.anim.bottom_ani);
+        leftAnim= AnimationUtils.loadAnimation(this, R.anim.left_ani);
 //        Get element
         img_login=findViewById(R.id.img_login);
         img_fb=findViewById(R.id.img_fb);
@@ -40,7 +41,18 @@ public class Login extends AppCompatActivity {
         bt_signin=findViewById(R.id.bt_login);
 //        Set Animation
         img_login.setAnimation(topAnim);
-        bt_signin.setAnimation(bottomAnim);
+        text_singin.setAnimation(topAnim);
+//
+        bt_signin.setAnimation(leftAnim);
+        username.setAnimation(leftAnim);
+        pass.setAnimation(leftAnim);
+//
+        text_sigup.setAnimation(bottomAnim);
+        text_forgetpass.setAnimation(bottomAnim);
+        img_gg.setAnimation(bottomAnim);
+        img_fb.setAnimation(bottomAnim);
+        img_ig.setAnimation(bottomAnim);
+
         text_sigup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

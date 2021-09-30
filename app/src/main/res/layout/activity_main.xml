@@ -69,4 +69,5 @@
         android:textSize="23dp"
         android:textColor="@color/white"
         android:textStyle="bold"/>
+
 </RelativeLayout>
