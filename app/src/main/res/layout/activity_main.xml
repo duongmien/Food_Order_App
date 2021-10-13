@@ -24,7 +24,7 @@
         android:layout_marginTop="290dp"
         android:fontFamily="@font/dancingscript"
         android:text="Sunshine"
-        android:textColor="#FF6838"
+        android:textColor="#0000"
         android:textSize="70sp" />
     <TextView
         android:id="@+id/slogan"
