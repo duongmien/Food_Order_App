@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login_Form">
         <activity
+            android:name=".Sua_Dia_Chi"
+            android:exported="true" />
+        <activity
+            android:name=".Them_Dia_Chi"
+            android:exported="true" />
+        <activity
+            android:name=".Chinh_Sua_Thong_Tin"
+            android:exported="true" />
+        <activity
+            android:name=".Thiet_Lap_Mat_Khau"
+            android:exported="true" />
+        <activity
+            android:name=".Dia_Chi"
+            android:exported="true" />
+        <activity
+            android:name=".HoSo"
+            android:exported="true" />
+        <activity
             android:name=".Singup"
             android:exported="true" />
         <activity

@@ -62,5 +62,16 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        //hạ test activity hồ sơ
+//        Button loginDC = (Button) findViewById(R.id.bt_login);
+//        loginDC.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Login.this, HoSo.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
+
     }
 }
