@@ -26,7 +26,7 @@
             app:layout_constraintHorizontal_bias="0.041"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="?attr/actionModeCloseDrawable" />
+            app:srcCompat="@drawable/muitentrang" />
 
         <TextView
             android:id="@+id/tvhosomain"
@@ -53,6 +53,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clthemdc"
         android:layout_width="0dp"
         android:layout_height="47dp"
         android:layout_marginStart="4dp"
@@ -64,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/listdiachi">
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/tvthemdc2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -87,8 +88,48 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.887"
-            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintStart_toEndOf="@+id/tvthemdc2"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/home4"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/nhaxamm" />
+
+    <ImageView
+        android:id="@+id/tym4"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home4"
+        app:srcCompat="@drawable/tymxxamm" />
+
+    <ImageView
+        android:id="@+id/gio4"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tym4"
+        app:srcCompat="@drawable/ghxam" />
+
+    <ImageView
+        android:id="@+id/nguoi4"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gio4"
+        app:srcCompat="@drawable/nguoidoo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

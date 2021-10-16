@@ -26,7 +26,7 @@
             app:layout_constraintHorizontal_bias="0.041"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="?attr/actionModeCloseDrawable" />
+            app:srcCompat="@drawable/muitentrang" />
 
         <TextView
             android:id="@+id/textview1111"
@@ -194,7 +194,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnsdc"
+        android:id="@+id/btntdc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
@@ -208,6 +208,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/home3"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/nhaxamm" />
+
+    <ImageView
+        android:id="@+id/tym3"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home3"
+        app:srcCompat="@drawable/tymxxamm" />
+
+    <ImageView
+        android:id="@+id/gio3"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tym3"
+        app:srcCompat="@drawable/ghxam" />
+
+    <ImageView
+        android:id="@+id/nguoi3"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gio3"
+        app:srcCompat="@drawable/nguoidoo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,8 +14,8 @@ import java.util.ArrayList;
 
 public class Dia_Chi extends AppCompatActivity {
 
-    TextView txtthemdc;
-    ImageView imgvbackdc;
+    TextView txtthemdc, txtthemdc2;
+    ImageView imgvbackdc, imgvnguoi4, imgvgio4;
     ListView lvdiachi;
     ArrayList<ClassDiaChi> arraydiachi;
     DiaChiAdapter adapterdiachi;
@@ -63,6 +63,15 @@ public class Dia_Chi extends AppCompatActivity {
                 finish();
             }
         });
+        //quay lại trang hồ sơ cá nhân
+        imgvnguoi4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dia_Chi.this, HoSo.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         //đến trang thêm địa chỉ mới
         txtthemdc.setOnClickListener(new View.OnClickListener() {
@@ -73,12 +82,34 @@ public class Dia_Chi extends AppCompatActivity {
                 finish();
             }
         });
+        //đến trang thêm địa chỉ mới
+        txtthemdc2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dia_Chi.this, Them_Dia_Chi.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        //đến trang giỏ hàng
+        imgvgio4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dia_Chi.this, Gio_Hang.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 
     private void AnhXa () {
         imgvbackdc = (ImageView) findViewById(R.id.imgvbackdc);
+        imgvnguoi4 = (ImageView) findViewById(R.id.nguoi4);
+        imgvgio4 = (ImageView) findViewById(R.id.gio4);
         txtthemdc = (TextView) findViewById(R.id.tvthemdc);
+        txtthemdc2 = (TextView) findViewById(R.id.tvthemdc2);
 
         lvdiachi = (ListView) findViewById(R.id.listdiachi);
         arraydiachi = new ArrayList<>();

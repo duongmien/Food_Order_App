@@ -72,6 +72,16 @@ public class Login extends AppCompatActivity {
 //                finish();
 //            }
 //        });
+        // hạ test giỏ hàng
+        Button loginDC = (Button) findViewById(R.id.bt_login);
+        loginDC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this, Gio_Hang.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 }

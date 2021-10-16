@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login_Form">
         <activity
+            android:name=".Dat_Hang_Thanh_Cong"
+            android:exported="true" />
+        <activity
+            android:name=".Gio_Hang"
+            android:exported="true" />
+        <activity
+            android:name=".Them_San_Pham"
+            android:exported="true" />
+        <activity
             android:name=".Sua_Dia_Chi"
             android:exported="true" />
         <activity

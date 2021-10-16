@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class HoSo extends AppCompatActivity {
 
     TextView txtdiachi, txtmatkhau, txtdangxuat;
-    ImageView imgvchinhsua;
+    ImageView imgvchinhsua, imgvgio6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,13 +60,25 @@ public class HoSo extends AppCompatActivity {
             }
         });
 
+        //đến trang giỏ hàng
+        imgvgio6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HoSo.this, Gio_Hang.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 
     private void AnhXa() {
 
+        txtdangxuat = (TextView) findViewById(R.id.tvhosodangxuat);
         txtdiachi = (TextView) findViewById(R.id.tvhosodiachi);
         txtmatkhau = (TextView) findViewById(R.id.tvhosomatkhau);
         imgvchinhsua = (ImageView) findViewById(R.id.imgvchinhsua);
-        txtdangxuat = (TextView) findViewById(R.id.tvhosodangxuat);
+        imgvgio6 = (ImageView) findViewById(R.id.gio1);
+
     }
 }
