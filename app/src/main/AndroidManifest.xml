@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login_Form">
         <activity
+            android:name=".TimKiemSai"
+            android:exported="true" />
+        <activity
+            android:name=".TimKiemDung"
+            android:exported="true" />
+        <activity
             android:name=".Dat_Hang_Thanh_Cong"
             android:exported="true" />
         <activity
