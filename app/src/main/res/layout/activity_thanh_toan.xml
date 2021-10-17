@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Thanh_Toan">
+
+
+<LinearLayout
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/camdam"
+    >
+    <ImageView
+        android:id="@+id/back.png"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <TextView
+        android:id="@+id/textview1111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHƯƠNG THỨC THANH TOÁN"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+
+
+        />
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/LinearLayout2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/LinearLayout"
+    >
+
+    <TextView
+        android:id="@+id/tcpttt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tất cả phương thức thanh toán"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#BFB8B8"
+        android:layout_marginTop="20dp"
+
+        />
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/LinearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_below="@+id/LinearLayout2"
+    android:layout_marginTop="20dp"
+    android:background="#F1EDEA"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/radio_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:checked="true"
+
+        />
+
+    <ImageView
+        android:id="@+id/zalo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="45dp"
+        android:src="@drawable/zalo" />
+
+    <TextView
+        android:id="@+id/vizalopay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:text="Ví ZaloPay"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="95dp"
+        android:src="@drawable/right"
+
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@id/LinearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_below="@+id/LinearLayout3"
+    android:layout_marginTop="25dp"
+    android:background="#F1EDEA"
+    android:orientation="horizontal"
+    >
+    <RadioButton
+        android:id="@+id/radio_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/momo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/momo"
+        android:layout_marginLeft="45dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/vimomo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ví MoMo"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginLeft="45dp"
+        />
+    <ImageView
+        android:id="@+id/right2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:src="@drawable/right"
+        android:layout_gravity="center"
+        android:layout_marginLeft="110dp"
+
+        />
+
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/LinearLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_below="@+id/LinearLayout4"
+    android:layout_marginTop="25dp"
+    android:background="#F1EDEA"
+    android:orientation="horizontal"
+    >
+    <RadioButton
+        android:id="@+id/radio_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+
+        />
+
+
+
+    <ImageView
+        android:id="@+id/taikhoan"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:src="@drawable/taikhoannganhang"
+        android:layout_marginLeft="45dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/taikhoannganhang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản ngân hàng"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        />
+    <ImageView
+        android:id="@+id/right3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:src="@drawable/right"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+
+        />
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/LinearLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_below="@+id/LinearLayout5"
+    android:layout_marginTop="25dp"
+    android:background="#F1EDEA"
+    android:orientation="horizontal"
+    >
+    <RadioButton
+        android:id="@+id/radio_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/nhan"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:src="@drawable/nhanhang"
+        android:layout_marginLeft="45dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/nhanhang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanh toán khi nhận hàng"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        />
+    <ImageView
+        android:id="@+id/right4"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:src="@drawable/right"
+        android:layout_gravity="center"
+        android:layout_marginLeft="6dp"
+
+        />
+
+
+</LinearLayout>
+<Button
+    android:id="@+id/bt_dongy"
+    android:layout_width="100dp"
+    android:layout_height="45dp"
+    android:layout_below="@+id/LinearLayout6"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="13dp"
+    android:text="ĐỒNG Ý"
+
+    android:textColor="@color/white"
+    android:textSize="18dp"
+    android:background="@drawable/button_bg"
+
+
+    />
+
+<ImageView
+    android:id="@+id/home"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_below="@+id/bt_dongy"
+    android:layout_marginTop="25dp"
+    android:src="@drawable/home"
+    android:layout_marginLeft="40dp"
+    />
+
+
+<ImageView
+    android:id="@+id/yeuthich"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/yeuthich"
+    android:layout_toRightOf="@+id/home"
+    android:layout_below="@+id/bt_dongy"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="60dp"
+    />
+<ImageView
+    android:id="@+id/giohang"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/giohang"
+    android:layout_toRightOf="@+id/yeuthich"
+    android:layout_below="@+id/bt_dongy"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="50dp"
+    />
+<ImageView
+    android:id="@+id/canhan"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/cannhan"
+    android:layout_toRightOf="@+id/giohang"
+    android:layout_below="@+id/bt_dongy"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="50dp"
+    />
+</RelativeLayout>
