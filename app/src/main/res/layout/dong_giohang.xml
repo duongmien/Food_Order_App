@@ -28,7 +28,7 @@
         app:srcCompat="@drawable/hamburger" />
 
     <TextView
-        android:id="@+id/tvgiagh"
+        android:id="@+id/tvgialsp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
@@ -40,7 +40,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvslgh"
+        android:id="@+id/tvsllsp"
         android:layout_width="27dp"
         android:layout_height="27dp"
         android:layout_marginStart="270dp"
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/tvconglsp"
         android:layout_width="27dp"
         android:layout_height="27dp"
         android:layout_marginStart="-1dp"
@@ -63,11 +63,11 @@
         android:gravity="center"
         android:text="+"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/tvslgh"
+        app:layout_constraintStart_toEndOf="@+id/tvsllsp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/tvtrulsp"
         android:layout_width="27dp"
         android:layout_height="27dp"
         android:layout_marginTop="85dp"
@@ -76,7 +76,7 @@
         android:gravity="center"
         android:text="-"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/tvslgh"
+        app:layout_constraintEnd_toStartOf="@+id/tvsllsp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView

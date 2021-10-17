@@ -8,8 +8,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.List;
 
 public class GioHangAdapter extends BaseAdapter {
@@ -30,8 +28,11 @@ public class GioHangAdapter extends BaseAdapter {
     }
 
     @Override
+//    public Object getItem(int i) {
+//        return null;
+//    }
     public Object getItem(int i) {
-        return null;
+        return gioHangList.get(i);
     }
 
     @Override
@@ -56,8 +57,8 @@ public class GioHangAdapter extends BaseAdapter {
 
             //ánh xạ view
             holder.imghinh = (ImageView) view.findViewById(R.id.imgvhinhgh);
-            holder.txtgia = (TextView) view.findViewById(R.id.tvgiagh);
-            holder.txtsl = (TextView) view.findViewById(R.id.tvslgh);
+            holder.txtgia = (TextView) view.findViewById(R.id.tvgialsp);
+            holder.txtsl = (TextView) view.findViewById(R.id.tvsllsp);
             holder.txtten = (TextView) view.findViewById(R.id.tvtenmongh);
 
             view.setTag(holder);

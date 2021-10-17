@@ -5,21 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class Gio_Hang extends AppCompatActivity {
 
     ListView lvgiohang;
-    ImageView imgvnguoi1;
+    ImageView imgvnguoi1, imgvbackgh;
     ArrayList<ClassGioHang> arrayGH;
     GioHangAdapter adapterGH;
 
-    ImageView imgvbackgh;
     Button btndathanggh;
+    TextView tvtongtiengh, tvsosanphamgh, txtconglsp, txttrulsp, txtsllsp, txtgialsp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,16 @@ public class Gio_Hang extends AppCompatActivity {
         adapterGH = new GioHangAdapter(this, R.layout.dong_giohang, arrayGH);
         lvgiohang.setAdapter(adapterGH);
 
+
+
+        //Tính tổng tiền, số sản phẩm
+        double tongtien = 0;
+        for(int i=0; i<adapterGH.getCount(); i++) {
+            ClassGioHang gioHang = (ClassGioHang) adapterGH.getItem(i);
+            tongtien = tongtien + gioHang.getGia() * gioHang.getSl();
+        }
+        tvtongtiengh.setText(tongtien + "đ");
+        tvsosanphamgh.setText("Tổng " + adapterGH.getCount() + " sản phẩm");
 
         //chuyển đến trang đặt hàng thành công
         btndathanggh.setOnClickListener(new View.OnClickListener() {
@@ -51,9 +63,25 @@ public class Gio_Hang extends AppCompatActivity {
                 finish();
             }
         });
+
+        //trở lại trang thêm sản phầm
+        imgvbackgh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Gio_Hang.this, Them_San_Pham.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void AnhXa() {
+        txtgialsp = (TextView) findViewById(R.id.tvgialsp);
+        txtconglsp = (TextView) findViewById(R.id.tvconglsp);
+        txtsllsp = (TextView) findViewById(R.id.tvsllsp);
+        txttrulsp = (TextView) findViewById(R.id.tvtrulsp);
+        tvsosanphamgh = (TextView) findViewById(R.id.tvsospgh);
+        tvtongtiengh = (TextView) findViewById(R.id.tvtongtiengh);
         imgvbackgh = (ImageView) findViewById(R.id.imgvbackgh);
         imgvnguoi1 = (ImageView) findViewById(R.id.nguoi1);
         btndathanggh = (Button) findViewById(R.id.btndathanggh);
