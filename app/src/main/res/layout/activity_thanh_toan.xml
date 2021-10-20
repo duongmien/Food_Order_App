@@ -277,15 +277,14 @@ tools:context=".Thanh_Toan">
 
     />
 
-<ImageView
-    android:id="@+id/home"
-    android:layout_width="40dp"
-    android:layout_height="40dp"
-    android:layout_below="@+id/bt_dongy"
-    android:layout_marginTop="25dp"
-    android:src="@drawable/home"
-    android:layout_marginLeft="40dp"
-    />
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bt_dongy"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/homee" />
 
 
 <ImageView
