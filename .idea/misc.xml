@@ -3,6 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/drawable/bg_box_diachi.xml" value="0.18611111111111112" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/drawable/bg_box_hoso.xml" value="0.18796296296296297" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/drawable/bg_congtru.xml" value="0.20925925925925926" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/drawable/bg_giohang.xml" value="0.20925925925925926" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/drawable/bg_themsp.xml" value="0.20925925925925926" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/drawable/button_bg.xml" value="0.18796296296296297" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/activity_chinhsuathongtin.xml" value="0.25416666666666665" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/activity_dathangthanhcong.xml" value="0.25416666666666665" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/activity_diachi.xml" value="0.264" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/activity_giohang.xml" value="0.264" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/activity_hoso.xml" value="0.264" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/activity_singup.xml" value="0.17300724637681159" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/activity_suadiachi.xml" value="0.264" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/activity_themdiachi.xml" value="0.25416666666666665" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/activity_themsanpham.xml" value="0.25416666666666665" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/activity_thietlapmatkhau.xml" value="0.264" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/dong_diachi.xml" value="0.264" />
+        <entry key="..\:/Nam3/LapTrinhDiDong/FoodApp/app/src/main/res/layout/dong_giohang.xml" value="0.264" />
         <entry key="..\:/SINHVIEN/HOC KY 5-121/Android Studio/Login_Form/app/src/main/res/drawable/button_bg.xml" value="0.2703125" />
         <entry key="..\:/SINHVIEN/HOC KY 5-121/Android Studio/Login_Form/app/src/main/res/drawable/edit_text_border.xml" value="0.26256410256410256" />
         <entry key="..\:/SINHVIEN/HOC KY 5-121/Android Studio/Login_Form/app/src/main/res/drawable/home.xml" value="0.2703125" />
