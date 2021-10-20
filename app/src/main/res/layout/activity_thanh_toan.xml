@@ -72,6 +72,8 @@ tools:context=".Thanh_Toan">
         android:layout_gravity="center"
         android:layout_marginLeft="15dp"
         android:checked="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
 
         />
 
@@ -120,6 +122,9 @@ tools:context=".Thanh_Toan">
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="15dp"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+
 
         />
 
@@ -168,6 +173,9 @@ tools:context=".Thanh_Toan">
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="15dp"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+
 
         />
 
@@ -216,6 +224,9 @@ tools:context=".Thanh_Toan">
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="15dp"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+
 
         />
 
@@ -253,7 +264,7 @@ tools:context=".Thanh_Toan">
 <Button
     android:id="@+id/bt_dongy"
     android:layout_width="100dp"
-    android:layout_height="45dp"
+    android:layout_height="50dp"
     android:layout_below="@+id/LinearLayout6"
     android:layout_centerHorizontal="true"
     android:layout_marginTop="13dp"
