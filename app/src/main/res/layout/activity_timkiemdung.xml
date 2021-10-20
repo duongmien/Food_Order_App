@@ -97,29 +97,36 @@
             android:id="@+id/bt_phobien"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:backgroundTint="@color/purple_200"
             android:text="Phổ biến"
-            android:backgroundTint="@color/purple_200"/>
+            tools:ignore="TouchTargetSizeCheck" />
+
         <Button
             android:id="@+id/bt_banchay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_title"
             android:layout_marginLeft="10dp"
-            android:text="Bán chạy"/>
+            android:background="@drawable/bg_title"
+            android:text="Bán chạy"
+            tools:ignore="TouchTargetSizeCheck" />
+
         <Button
             android:id="@+id/bt_giathap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_title"
             android:layout_marginLeft="10dp"
-            android:text="Giá thấp"/>
+            android:background="@drawable/bg_title"
+            android:text="Giá thấp"
+            tools:ignore="TouchTargetSizeCheck" />
+
         <Button
             android:id="@+id/bt_giacao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_title"
             android:layout_marginLeft="10dp"
-            android:text="Giá cao"/>
+            android:background="@drawable/bg_title"
+            android:text="Giá cao"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
 
@@ -176,25 +183,30 @@
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
-                        android:textStyle="bold"
                         android:text="-"
-                        android:textSize="30dp" />
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <Button
                         android:id="@+id/bt_soluong1"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
-                        android:textStyle="bold"
                         android:text="1"
-                        android:textSize="30dp" />
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <Button
                         android:id="@+id/bt_tang1"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
-                        android:textStyle="bold"
                         android:text="+"
-                        android:textSize="30dp" />
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
 
                 <TextView
@@ -270,25 +282,30 @@
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
-                        android:textStyle="bold"
                         android:text="-"
-                        android:textSize="30dp" />
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <Button
                         android:id="@+id/bt_soluong2"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
-                        android:textStyle="bold"
                         android:text="1"
-                        android:textSize="30dp" />
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <Button
                         android:id="@+id/bt_tang2"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
-                        android:textStyle="bold"
                         android:text="+"
-                        android:textSize="30dp" />
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
 
                 <TextView
@@ -354,25 +371,30 @@
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
-                        android:textStyle="bold"
                         android:text="-"
-                        android:textSize="30dp" />
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <Button
                         android:id="@+id/bt_soluong3"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
-                        android:textStyle="bold"
                         android:text="1"
-                        android:textSize="30dp" />
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <Button
                         android:id="@+id/bt_tang3"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
-                        android:textStyle="bold"
                         android:text="+"
-                        android:textSize="30dp" />
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
 
                 <TextView

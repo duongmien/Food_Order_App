@@ -102,14 +102,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
+        android:background="@color/mauhuong"
         android:ems="18"
         android:fontFamily="@font/opensans"
-        android:textSize="13dp"
-        android:background="@color/mauhuong"
-        android:textColor="@color/maudo"
-        android:layout_gravity="center_horizontal"
-        android:text="Vui lòng nhập lại với từ khóa khác"/>
+        android:text="Vui lòng nhập lại với từ khóa khác"
+        android:textColor="#880E4F"
+        android:textSize="13dp" />
 
     <LinearLayout
         android:layout_width="match_parent"

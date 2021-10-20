@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class Gio_Hang extends AppCompatActivity {
 
     ListView lvgiohang;
-    ImageView imgvnguoi1, imgvbackgh;
+    ImageView imgvhome1, imgvnguoi1, imgvbackgh, imgvchonptttgh;
     ArrayList<ClassGioHang> arrayGH;
     GioHangAdapter adapterGH;
 
@@ -73,6 +73,26 @@ public class Gio_Hang extends AppCompatActivity {
                 finish();
             }
         });
+
+        //đến trang chọn phương thức thanh toán
+//        imgvchonptttgh.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Gio_Hang.this, Thanh_Toan.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
+
+        //đến trang tìm kiếm đúng
+//        imgvhome1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Gio_Hang.this, TimKiemDung.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
     }
 
     private void AnhXa() {
@@ -82,8 +102,12 @@ public class Gio_Hang extends AppCompatActivity {
         txttrulsp = (TextView) findViewById(R.id.tvtrulsp);
         tvsosanphamgh = (TextView) findViewById(R.id.tvsospgh);
         tvtongtiengh = (TextView) findViewById(R.id.tvtongtiengh);
+
         imgvbackgh = (ImageView) findViewById(R.id.imgvbackgh);
         imgvnguoi1 = (ImageView) findViewById(R.id.nguoi1);
+        imgvhome1 = (ImageView) findViewById(R.id.home1);
+        imgvchonptttgh = (ImageView) findViewById(R.id.imgvchonptttgh);
+
         btndathanggh = (Button) findViewById(R.id.btndathanggh);
 
         lvgiohang = (ListView) findViewById(R.id.lvgiohang);
