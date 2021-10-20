@@ -82,6 +82,7 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/timkiemsai"/>
     <TextView
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -91,6 +92,7 @@
         android:layout_gravity="center_horizontal"
         android:text="XIN LỖI"/>
     <TextView
+        android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -100,6 +102,7 @@
         android:text="Chúng tôi không thể tìm thấy kết quả của bạn"/>
 
     <Button
+        android:id="@+id/bt_timkiem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
