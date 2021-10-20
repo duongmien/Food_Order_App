@@ -21,7 +21,7 @@
             android:src="@drawable/back" />
 
         <LinearLayout
-            android:layout_width="300dp"
+            android:layout_width="260dp"
             android:layout_height="50dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
@@ -36,7 +36,7 @@
 
             <TextView
                 android:id="@+id/noidungtimkiem"
-                android:layout_width="250dp"
+                android:layout_width="210dp"
                 android:layout_height="30dp"
                 android:text="abdksfk"
                 android:paddingLeft="35dp"
@@ -61,32 +61,33 @@
 
         <ImageView
             android:id="@+id/banner"
-            android:layout_width="376dp"
+            android:layout_width="330dp"
             android:layout_height="92dp"
             android:layout_margin="5dp"
             android:src="@drawable/banner1"/>
 
         <ImageView
             android:id="@+id/banner1"
-            android:layout_width="376dp"
+            android:layout_width="330dp"
             android:layout_height="92dp"
             android:layout_margin="5dp"
             android:src="@drawable/banner1"/>
 
     </LinearLayout>
+
     <ImageView
         android:id="@+id/sorry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_width="161dp"
+        android:layout_height="172dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/timkiemsai"/>
+        android:layout_marginTop="20dp"
+        android:src="@drawable/timkiemsai" />
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textSize="23dp"
         android:fontFamily="@font/opensans"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
@@ -96,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:textSize="17dp"
+        android:textSize="13dp"
         android:fontFamily="@font/opensans"
         android:layout_gravity="center_horizontal"
         android:text="Chúng tôi không thể tìm thấy kết quả của bạn"/>
@@ -105,7 +106,7 @@
         android:id="@+id/bt_timkiem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:ems="18"
         android:fontFamily="@font/opensans"
         android:textSize="13dp"
@@ -117,7 +118,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="47dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="80dp"
         android:orientation="horizontal">
 
         <ImageView
