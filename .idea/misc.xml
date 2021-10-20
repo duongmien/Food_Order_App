@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/HK121_2021-2022/LTDD_FoodApp/app/src/main/res/drawable/banner_con1.xml" value="0.2169230769230769" />
+        <entry key="..\:/HK121_2021-2022/LTDD_FoodApp/app/src/main/res/drawable/banner_con2.xml" value="0.2169230769230769" />
+        <entry key="..\:/HK121_2021-2022/LTDD_FoodApp/app/src/main/res/drawable/banner_monan.xml" value="0.2169230769230769" />
+        <entry key="..\:/HK121_2021-2022/LTDD_FoodApp/app/src/main/res/drawable/bg_box_search.xml" value="0.2169230769230769" />
+        <entry key="..\:/HK121_2021-2022/LTDD_FoodApp/app/src/main/res/drawable/bg_box_title.xml" value="0.2169230769230769" />
+        <entry key="..\:/HK121_2021-2022/LTDD_FoodApp/app/src/main/res/drawable/bg_congtru.xml" value="0.2203125" />
+        <entry key="..\:/HK121_2021-2022/LTDD_FoodApp/app/src/main/res/drawable/bg_title.xml" value="0.2169230769230769" />
+        <entry key="..\:/HK121_2021-2022/LTDD_FoodApp/app/src/main/res/layout/activity_giohang.xml" value="0.18206521739130435" />
+        <entry key="..\:/HK121_2021-2022/LTDD_FoodApp/app/src/main/res/layout/activity_timkiemdung.xml" value="0.151268115942029" />
+        <entry key="..\:/HK121_2021-2022/LTDD_FoodApp/app/src/main/res/layout/activity_timkiemsai.xml" value="0.18206521739130435" />
         <entry key="..\:/SINHVIEN/HOC KY 5-121/Android Studio/Login_Form/app/src/main/res/drawable/button_bg.xml" value="0.2703125" />
         <entry key="..\:/SINHVIEN/HOC KY 5-121/Android Studio/Login_Form/app/src/main/res/drawable/edit_text_border.xml" value="0.26256410256410256" />
         <entry key="..\:/SINHVIEN/HOC KY 5-121/Android Studio/Login_Form/app/src/main/res/drawable/home.xml" value="0.2703125" />
