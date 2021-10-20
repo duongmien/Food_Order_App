@@ -2,6 +2,7 @@ package com.myfistapp.login_form;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,8 +24,13 @@ public class Thanh_Toan extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                //Hạ test
+//                Intent intent = new Intent(Thanh_Toan.this, Gio_Hang.class);
+//                startActivity(intent);
+//                finish();
             }
         });
+
         radio_a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
