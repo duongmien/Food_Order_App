@@ -61,14 +61,14 @@
 
         <ImageView
             android:id="@+id/banner"
-            android:layout_width="376dp"
+            android:layout_width="330dp"
             android:layout_height="92dp"
             android:layout_margin="5dp"
             android:src="@drawable/bannerdsmon" />
 
         <ImageView
             android:id="@+id/banner1"
-            android:layout_width="376dp"
+            android:layout_width="330dp"
             android:layout_height="92dp"
             android:layout_margin="5dp"
             android:src="@drawable/bannerdsmon"/>
@@ -77,15 +77,15 @@
 
     <ListView
         android:id="@+id/dsmonan"
-        android:layout_width="361dp"
-        android:layout_height="413dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="390dp"
+        android:layout_height="405dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="26dp" />
 
     <LinearLayout
         android:layout_width="356dp"
-        android:layout_height="match_parent"
+        android:layout_height="74dp"
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -96,6 +96,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/home1" />
+
         <ImageView
             android:id="@+id/tim"
             android:layout_width="40dp"
@@ -103,6 +104,7 @@
             android:layout_marginLeft="55dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/vevtor1" />
+
         <ImageView
             android:id="@+id/giohang"
             android:layout_width="40dp"
@@ -110,6 +112,7 @@
             android:layout_marginLeft="55dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/giohang" />
+
         <ImageView
             android:id="@+id/canhan"
             android:layout_width="40dp"

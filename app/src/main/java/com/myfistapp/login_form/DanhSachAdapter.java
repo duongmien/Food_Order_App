@@ -36,8 +36,8 @@ public class DanhSachAdapter extends BaseAdapter {
         return 0;
     }
     private class   ViewHolder{
-        ImageView imghinh;
-        TextView txtten;
+        ImageView imghinh1, imghinh2;
+        TextView txtten1, txtten2;
     }
 
     @Override
@@ -49,10 +49,10 @@ public class DanhSachAdapter extends BaseAdapter {
             holder = new ViewHolder();
 
             //ánh xạ view
-            holder.imghinh = (ImageView) view.findViewById(R.id.hinh1);
-            holder.imghinh = (ImageView) view.findViewById(R.id.hinh2);
-            holder.txtten = (TextView) view.findViewById(R.id.ten1);
-            holder.txtten = (TextView) view.findViewById(R.id.ten2);
+            holder.imghinh1 = (ImageView) view.findViewById(R.id.hinh1);
+            holder.txtten1 = (TextView) view.findViewById(R.id.ten1);
+            holder.imghinh2 = (ImageView) view.findViewById(R.id.hinh2);
+            holder.txtten2 = (TextView) view.findViewById(R.id.ten2);
 
             view.setTag(holder);
         }
@@ -62,8 +62,10 @@ public class DanhSachAdapter extends BaseAdapter {
         //gan gia tri
         contact danhsach = danhSachList.get(i);
 
-        holder.txtten.setText(danhsach.getTen());
-        holder.imghinh.setImageResource(danhsach.getHinh());
+        holder.imghinh1.setImageResource(danhsach.getHinh());
+        holder.txtten1.setText(danhsach.getTen());
+        holder.imghinh2.setImageResource(danhsach.getHinh());
+        holder.txtten2.setText(danhsach.getTen());
 
         return view;
     }
