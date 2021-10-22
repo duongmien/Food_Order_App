@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TimKiemSai">
+    tools:context=".DanhSachMon">
 
     <LinearLayout
         android:layout_width="411dp"
@@ -38,7 +38,7 @@
                 android:id="@+id/noidungtimkiem"
                 android:layout_width="210dp"
                 android:layout_height="30dp"
-                android:text="abdksfk"
+                android:hint="Tìm món ở đây..."
                 android:paddingLeft="35dp"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
@@ -64,101 +64,62 @@
             android:layout_width="330dp"
             android:layout_height="92dp"
             android:layout_margin="5dp"
-            android:src="@drawable/banner1"/>
+            android:src="@drawable/bannerdsmon" />
 
         <ImageView
             android:id="@+id/banner1"
             android:layout_width="330dp"
             android:layout_height="92dp"
             android:layout_margin="5dp"
-            android:src="@drawable/banner1"/>
+            android:src="@drawable/bannerdsmon"/>
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/sorry"
-        android:layout_width="161dp"
-        android:layout_height="172dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/timkiemsai" />
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textSize="23dp"
-        android:fontFamily="@font/opensans"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:text="XIN LỖI"/>
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:textSize="13dp"
-        android:fontFamily="@font/opensans"
-        android:layout_gravity="center_horizontal"
-        android:text="Chúng tôi không thể tìm thấy kết quả của bạn"/>
-
-    <Button
-        android:id="@+id/bt_timkiem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:ems="18"
-        android:fontFamily="@font/opensans"
-        android:textSize="13dp"
-        android:background="@color/mauhuong"
-        android:textColor="@color/maudo"
-        android:layout_gravity="center_horizontal"
-        android:text="Vui lòng nhập lại với từ khóa khác"/>
+    <ListView
+        android:id="@+id/dsmonan"
+        android:layout_width="390dp"
+        android:layout_height="405dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="26dp" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="356dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center_horizontal"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/home"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="15dp"
-            app:srcCompat="@drawable/home" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/home1" />
 
         <ImageView
             android:id="@+id/tim"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="16dp"
-            app:srcCompat="@drawable/tymxxamm" />
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/vevtor1" />
 
         <ImageView
             android:id="@+id/giohang"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="13dp"
-            app:srcCompat="@drawable/ghxam" />
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/giohang" />
 
         <ImageView
-            android:id="@+id/nguoi"
+            android:id="@+id/canhan"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="15dp"
-            app:srcCompat="@drawable/nguoixamm" />
-
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/canhan" />
     </LinearLayout>
-
-
 
 </LinearLayout>

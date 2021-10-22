@@ -20,7 +20,7 @@
             android:src="@drawable/back" />
 
         <LinearLayout
-            android:layout_width="300dp"
+            android:layout_width="260dp"
             android:layout_height="50dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
@@ -29,13 +29,13 @@
 
             <ImageView
                 android:id="@+id/search"
-                android:layout_width="33dp"
+                android:layout_width="51dp"
                 android:layout_height="41dp"
                 android:src="@drawable/search" />
 
             <TextView
                 android:id="@+id/noidungtimkiem"
-                android:layout_width="250dp"
+                android:layout_width="210dp"
                 android:layout_height="30dp"
                 android:text="Hamburger"
                 android:paddingLeft="35dp"
@@ -60,14 +60,14 @@
 
         <ImageView
             android:id="@+id/banner"
-            android:layout_width="376dp"
+            android:layout_width="330dp"
             android:layout_height="92dp"
             android:layout_margin="5dp"
             android:src="@drawable/banner1"/>
 
         <ImageView
             android:id="@+id/banner1"
-            android:layout_width="376dp"
+            android:layout_width="330dp"
             android:layout_height="92dp"
             android:layout_margin="5dp"
             android:src="@drawable/banner1"/>
@@ -77,49 +77,55 @@
         android:id="@+id/ketqua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
         android:textStyle="italic"
-        android:textSize="16dp"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/opensans"
         android:textColor="@color/purple_700"
         android:text="Kết quả tìm kiếm cho 'Hamburger': 20 kết quả"/>
 
     <LinearLayout
-        android:layout_width="398dp"
+        android:layout_width="360dp"
         android:layout_height="44dp"
-        android:layout_marginTop="15dp"
         android:layout_gravity="center_horizontal"
+        android:layout_below="@id/ketqua"
+        android:layout_marginTop="15dp"
         android:background="@drawable/bg_box_title"
         android:fontFamily="@font/opensans"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/bt_phobien"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Phổ biến"
-            android:backgroundTint="@color/purple_200"/>
+            android:backgroundTint="@color/purple_200"
+            android:text="Phổ biến" />
+
         <Button
             android:id="@+id/bt_banchay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_title"
             android:layout_marginLeft="10dp"
-            android:text="Bán chạy"/>
+            android:background="@drawable/bg_title"
+            android:text="Bán chạy" />
+
         <Button
             android:id="@+id/bt_giathap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_title"
             android:layout_marginLeft="10dp"
-            android:text="Giá thấp"/>
+            android:background="@drawable/bg_title"
+            android:text="Giá thấp" />
+
         <Button
             android:id="@+id/bt_giacao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_title"
             android:layout_marginLeft="10dp"
-            android:text="Giá cao"/>
+            android:background="@drawable/bg_title"
+            android:text="Giá cao" />
 
     </LinearLayout>
 
@@ -130,14 +136,14 @@
         android:layout_height="408dp">
 
         <LinearLayout
-            android:layout_width="375dp"
+            android:layout_width="355dp"
             android:layout_height="98dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/banner_monan">
 
             <ImageView
                 android:id="@+id/hamburger1"
-                android:layout_width="105dp"
+                android:layout_width="100dp"
                 android:layout_height="86dp"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/hbgbo"/>
@@ -154,6 +160,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/opensans"
                     android:layout_marginTop="5dp"
+                    android:textSize="13dp"
                     android:text="Hamburger bò với tương ớt vị Caranbery" />
 
                 <ImageView
@@ -162,39 +169,44 @@
                     android:layout_height="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
-                    android:src="@drawable/danhgia"/>
+                    android:background="@drawable/bg_star"
+                    android:src="@drawable/star"/>
 
                 <LinearLayout
-                    android:layout_width="99dp"
-                    android:layout_height="30dp"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
                     android:textColor="@color/mauvang"
                     android:layout_marginLeft="150dp"
                     android:layout_marginTop="-20dp">
 
-                    <Button
+                    <TextView
                         android:id="@+id/bt_giam1"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
                         android:textStyle="bold"
                         android:text="-"
-                        android:textSize="30dp" />
-                    <Button
+                        android:background="@drawable/bg_congtru"
+                        android:textSize="16sp" />
+                    <TextView
                         android:id="@+id/bt_soluong1"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
                         android:textStyle="bold"
                         android:text="1"
-                        android:textSize="30dp" />
-                    <Button
+                        android:textColor="@color/camdam"
+                        android:background="@drawable/bg_congtru"
+                        android:textSize="16sp" />
+                    <TextView
                         android:id="@+id/bt_tang1"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
                         android:textStyle="bold"
                         android:text="+"
-                        android:textSize="30dp" />
+                        android:background="@drawable/bg_congtru"
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <TextView
@@ -202,7 +214,7 @@
                     android:layout_width="109dp"
                     android:layout_height="19dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:gravity="center"
                     android:textColor="@color/purple_500"
                     android:background="@drawable/banner_con1"
@@ -212,7 +224,7 @@
                     android:layout_width="73dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="140dp"
-                    android:layout_marginTop="-18dp"
+                    android:layout_marginTop="-21dp"
                     android:gravity="center"
                     android:textColor="@color/maudo"
                     android:background="@drawable/banner_con2"
@@ -257,7 +269,8 @@
                     android:layout_height="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
-                    android:src="@drawable/danhgia"/>
+                    android:background="@drawable/bg_star"
+                    android:src="@drawable/star"/>
                 <LinearLayout
                     android:layout_width="99dp"
                     android:layout_height="30dp"
@@ -265,30 +278,34 @@
                     android:layout_marginLeft="150dp"
                     android:layout_marginTop="-20dp">
 
-                    <Button
+                    <TextView
                         android:id="@+id/bt_giam2"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
                         android:textStyle="bold"
                         android:text="-"
-                        android:textSize="30dp" />
-                    <Button
+                        android:background="@drawable/bg_congtru"
+                        android:textSize="16sp" />
+                    <TextView
                         android:id="@+id/bt_soluong2"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
                         android:textStyle="bold"
                         android:text="1"
-                        android:textSize="30dp" />
-                    <Button
+                        android:textColor="@color/camdam"
+                        android:background="@drawable/bg_congtru"
+                        android:textSize="16sp" />
+                    <TextView
                         android:id="@+id/bt_tang2"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
                         android:textStyle="bold"
                         android:text="+"
-                        android:textSize="30dp" />
+                        android:background="@drawable/bg_congtru"
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <TextView
@@ -296,7 +313,7 @@
                     android:layout_width="109dp"
                     android:layout_height="19dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:gravity="center"
                     android:textColor="@color/purple_500"
                     android:background="@drawable/banner_con1"
@@ -341,7 +358,8 @@
                     android:layout_height="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
-                    android:src="@drawable/danhgia1"/>
+                    android:background="@drawable/bg_star"
+                    android:src="@drawable/star"/>
                 <LinearLayout
                     android:layout_width="99dp"
                     android:layout_height="30dp"
@@ -349,30 +367,34 @@
                     android:layout_marginLeft="150dp"
                     android:layout_marginTop="-20dp">
 
-                    <Button
+                    <TextView
                         android:id="@+id/bt_giam3"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
                         android:textStyle="bold"
                         android:text="-"
-                        android:textSize="30dp" />
-                    <Button
+                        android:background="@drawable/bg_congtru"
+                        android:textSize="16sp" />
+                    <TextView
                         android:id="@+id/bt_soluong3"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
                         android:textStyle="bold"
                         android:text="1"
-                        android:textSize="30dp" />
-                    <Button
+                        android:textColor="@color/camdam"
+                        android:background="@drawable/bg_congtru"
+                        android:textSize="16sp" />
+                    <TextView
                         android:id="@+id/bt_tang3"
                         android:layout_width="33dp"
                         android:layout_height="30dp"
                         android:gravity="center_horizontal"
                         android:textStyle="bold"
                         android:text="+"
-                        android:textSize="30dp" />
+                        android:background="@drawable/bg_congtru"
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <TextView
@@ -380,7 +402,7 @@
                     android:layout_width="109dp"
                     android:layout_height="19dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:gravity="center"
                     android:textColor="@color/purple_500"
                     android:background="@drawable/banner_con1"
@@ -390,7 +412,7 @@
                     android:layout_width="73dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="140dp"
-                    android:layout_marginTop="-18dp"
+                    android:layout_marginTop="-21dp"
                     android:gravity="center"
                     android:textColor="@color/maudo"
                     android:background="@drawable/banner_con2"
@@ -409,8 +431,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
                 app:srcCompat="@drawable/home" />
 
             <ImageView
