@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Category"
+    android:orientation="horizontal"
+   >
+
+    <LinearLayout
+        android:id="@id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        >
+        <ImageView
+            android:id="@+id/menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_item"
+            android:layout_marginLeft="20dp"
+
+            />
+        <TextView
+            android:id="@+id/thucuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thức uống"
+            android:fontFamily="@font/dancingscript"
+            android:textSize="25dp"
+            android:textColor="@color/camdam"
+            android:layout_below="@+id/menu_item"
+            android:layout_marginLeft="48dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@id/LinearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/LinearLayout1"
+        >
+        <ImageView
+            android:id="@+id/menu_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_item1"
+            android:layout_marginLeft="30dp"
+
+
+            />
+        <TextView
+            android:id="@+id/garan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gà rán"
+            android:fontFamily="@font/dancingscript"
+            android:textSize="25dp"
+            android:textColor="@color/camdam"
+            android:layout_below="@+id/menu_item"
+            android:layout_marginLeft="65dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

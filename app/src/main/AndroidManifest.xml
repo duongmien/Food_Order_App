@@ -16,6 +16,12 @@
             android:name=".TimKiemDung"
             android:exported="true" />
         <activity
+            android:name=".Category"
+            android:exported="true" />
+        <activity
+            android:name=".Thanh_Toan"
+            android:exported="true" />
+        <activity
             android:name=".Dat_Hang_Thanh_Cong"
             android:exported="true" />
         <activity
