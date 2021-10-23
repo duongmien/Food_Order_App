@@ -26,11 +26,8 @@ public class DanhSachMon extends AppCompatActivity {
         lvdanhsach = (ListView) findViewById(R.id.dsmonan);
         arrayDS = new ArrayList<>();
 
-        arrayDS.add(new contact(R.drawable.swvietquat,"Sandwish Việt quất"));
-        arrayDS.add(new contact(R.drawable.pizzahaisan,"Pizza Hải sản"));
-        arrayDS.add(new contact(R.drawable.redsea,"Red Sea"));
-        arrayDS.add(new contact(R.drawable.banhdau,"Bánh dâu"));
-        arrayDS.add(new contact(R.drawable.anttin,"Anttin Mexico"));
-        arrayDS.add(new contact(R.drawable.cahoi,"Cá hồi áp chảo"));
+        arrayDS.add(new contact(R.drawable.swvietquat,"Sandwish Việt quất",R.drawable.pizzahaisan,"Pizza Hải sản"));
+        arrayDS.add(new contact(R.drawable.redsea,"Red Sea",R.drawable.banhdau,"Bánh dâu"));
+        arrayDS.add(new contact(R.drawable.anttin,"Anttin Mexico",R.drawable.cahoi,"Cá hồi áp chảo"));
     }
 }

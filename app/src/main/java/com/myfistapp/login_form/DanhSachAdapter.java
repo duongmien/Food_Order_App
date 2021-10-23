@@ -62,10 +62,10 @@ public class DanhSachAdapter extends BaseAdapter {
         //gan gia tri
         contact danhsach = danhSachList.get(i);
 
-        holder.imghinh1.setImageResource(danhsach.getHinh());
-        holder.txtten1.setText(danhsach.getTen());
-        holder.imghinh2.setImageResource(danhsach.getHinh());
-        holder.txtten2.setText(danhsach.getTen());
+        holder.imghinh1.setImageResource(danhsach.getHinh1());
+        holder.txtten1.setText(danhsach.getTen1());
+        holder.imghinh2.setImageResource(danhsach.getHinh2());
+        holder.txtten2.setText(danhsach.getTen2());
 
         return view;
     }
