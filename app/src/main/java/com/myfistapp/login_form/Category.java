@@ -27,15 +27,13 @@ public class Category extends AppCompatActivity {
         lvFood =(ListView) findViewById(R.id.lvFood);
         arrayFood= new ArrayList<>();
 
-        arrayFood.add(new Food("Thức uống",R.drawable.menu_item));
-        arrayFood.add(new Food("Gà rán",R.drawable.menu_item1));
+        arrayFood.add(new Food("Thức uống","Gà rán",R.drawable.menu_item,R.drawable.menu_item1));
+        arrayFood.add(new Food("Mỳ ý","Tráng miệng",R.drawable.menu_item2,R.drawable.menu_item3));
+        arrayFood.add(new Food("Salad","Hambuger",R.drawable.menu_item4,R.drawable.menu_item5));
 
-        arrayFood.add(new Food("Mỳ ý",R.drawable.menu_item2));
 
-        arrayFood.add(new Food("Tráng miệng",R.drawable.menu_item3));
 
-        arrayFood.add(new Food("Salad",R.drawable.menu_item4));
-        arrayFood.add(new Food("Hamburger",R.drawable.menu_item5));
+
 
 
 
