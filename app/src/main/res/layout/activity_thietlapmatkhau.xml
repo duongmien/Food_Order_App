@@ -1,64 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="7"
     android:background="@color/camnhat"
-    tools:context=".Thiet_Lap_Mat_Khau">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="95dp"
+        android:layout_height="0dp"
         android:background="@color/camdam"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_weight="1">
 
         <ImageView
             android:id="@+id/imgvbackmk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.041"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/muitentrang" />
-
+            app:srcCompat="@drawable/muitentrang"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            ></ImageView>
         <TextView
-            android:id="@+id/tvhosomain3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
             android:text="Thiết lập mật khẩu"
             android:textColor="@color/white"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="28dp"
+            android:textStyle="bold"></TextView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:background="@drawable/bg_box_diachi"
-        android:layout_width="401dp"
-        android:layout_height="224dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        android:layout_margin="5dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="2.2">
 
         <EditText
             android:id="@+id/edtsdtmk"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
@@ -67,15 +55,11 @@
             android:hint="Số điện thoại"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="********89"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.083"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:text="********89" />
 
         <EditText
             android:id="@+id/edtxacnhanmk"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="2dp"
@@ -83,31 +67,10 @@
             android:ems="10"
             android:hint="Xác nhận mật khẩu"
             android:inputType="textPassword"
-            android:minHeight="48dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edtmkmoi" />
-
-        <EditText
-            android:id="@+id/edtmaxacnhan"
-            android:layout_width="294dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="10dp"
-            android:ems="10"
-            android:hint="Mã xác minh"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edtxacnhanmk" />
-
+            android:minHeight="48dp" />
         <EditText
             android:id="@+id/edtmkmoi"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="2dp"
@@ -115,82 +78,93 @@
             android:ems="10"
             android:hint="Mật khẩu mới"
             android:inputType="textPassword"
-            android:minHeight="48dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edtsdtmk" />
+            android:minHeight="48dp"/>
 
-        <TextView
-            android:id="@+id/tvguima"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtmaxacnhan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:hint="Mã xác minh"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/tvguima"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Gửi lại"
+                android:textColor="@color/camdam"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.3"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnxacnhanmk"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="XÁC NHẬN"
+            android:textColor="@color/white"
+            android:textSize="19dp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="bottom"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/home2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="5dp"
-            android:text="Gửi lại"
-            android:textColor="@color/camdam"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.476"
-            app:layout_constraintStart_toEndOf="@+id/edtmaxacnhan"
-            app:layout_constraintTop_toBottomOf="@+id/edtxacnhanmk" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nhaxamm" />
 
-    <Button
-        android:id="@+id/btnxacnhanmk"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="248dp"
-        android:background="@drawable/button_bg"
-        android:text="Xác nhận"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:id="@+id/tym2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="2dp"
+            app:srcCompat="@drawable/tymxxamm" />
 
-    <ImageView
-        android:id="@+id/home2"
-        android:layout_width="40dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="17dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/nhaxamm" />
+        <ImageView
+            android:id="@+id/gio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ghxam" />
 
-    <ImageView
-        android:id="@+id/tym2"
-        android:layout_width="35dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/home2"
-        app:srcCompat="@drawable/tymxxamm" />
-
-    <ImageView
-        android:id="@+id/gio2"
-        android:layout_width="35dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tym2"
-        app:srcCompat="@drawable/ghxam" />
-
-    <ImageView
-        android:id="@+id/nguoi2"
-        android:layout_width="42dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gio2"
-        app:srcCompat="@drawable/nguoidoo" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/nguoi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="-4dp"
+            app:srcCompat="@drawable/nguoidoo" />
+    </LinearLayout>
+</LinearLayout>
