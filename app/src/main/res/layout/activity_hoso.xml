@@ -1,123 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="7"
     android:background="@color/camnhat"
-    tools:context=".HoSo">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="95dp"
+        android:layout_height="0dp"
         android:background="@color/camdam"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_weight="1">
 
         <ImageView
             android:id="@+id/imgvbackhoso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.041"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/muitentrang" />
+            app:srcCompat="@drawable/muitentrang"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            ></ImageView>
 
         <TextView
-            android:id="@+id/tvhosomain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
             android:text="Thông tin cá nhân"
             android:textColor="@color/white"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:textSize="28dp"
+            android:textStyle="bold"></TextView>
 
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvhosoxoatk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:text="Yêu cầu xóa tài khoản"
-        android:textColor="@color/camdam"
-        app:layout_constraintBottom_toTopOf="@+id/home1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
 
-    <TextView
-        android:id="@+id/tvhosomatkhau"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Thiết lập mật khẩu"
-        android:textColor="@color/camdam"
-        app:layout_constraintBottom_toTopOf="@+id/tvhosoxoatk"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
-        app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/avt"></ImageView>
 
-    <TextView
-        android:id="@+id/tvhosodiachi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Địa chỉ"
-        android:textColor="@color/camdam"
-        app:layout_constraintBottom_toTopOf="@+id/tvhosomatkhau"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
-        app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvhosodangxuat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:text="Đăng xuất"
-        android:textColor="@color/camdam"
-        app:layout_constraintBottom_toTopOf="@+id/nguoi1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.764"
-        app:layout_constraintStart_toEndOf="@+id/tvhosoxoatk" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="93dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:srcCompat="@drawable/avt" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="389dp"
-        android:layout_height="387dp"
-        android:layout_marginTop="8dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:background="@drawable/bg_box_hoso"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        >
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="365dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
             android:background="@color/white"
             android:orientation="vertical"
+            android:weightSum="7"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.567"
@@ -126,7 +74,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
@@ -152,7 +100,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="61dp"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
@@ -178,7 +126,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="61dp"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
@@ -204,7 +152,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="61dp"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
@@ -230,7 +178,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="61dp"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
@@ -256,7 +204,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="61dp"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
@@ -282,59 +230,107 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="61dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
                 <ImageView
                     android:id="@+id/imgvchinhsua"
-                    android:layout_width="67dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="280dp"
-                    app:srcCompat="@drawable/butchi" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/butchi"
+                    android:layout_marginLeft="300dp"
+                    />
             </LinearLayout>
         </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
-    <ImageView
-        android:id="@+id/home1"
-        android:layout_width="40dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/nhaxamm" />
 
-    <ImageView
-        android:id="@+id/tym1"
-        android:layout_width="35dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/home1"
-        app:srcCompat="@drawable/tymxxamm" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:gravity="center">
 
-    <ImageView
-        android:id="@+id/gio1"
-        android:layout_width="35dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tym1"
-        app:srcCompat="@drawable/ghxam" />
+        <TextView
+            android:id="@+id/tvhosodiachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/camdam"
+            android:text="Địa chỉ"></TextView>
 
-    <ImageView
-        android:id="@+id/nguoi1"
-        android:layout_width="42dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gio1"
-        app:srcCompat="@drawable/nguoidoo" />
+        <TextView
+            android:id="@+id/tvhosomatkhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/camdam"
+            android:text="Thiết lập mật khẩu"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"></TextView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvhosoxoatk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/camdam"
+                android:text="Yêu cầu xóa tài khoản"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/tvhosodangxuat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/camdam"
+                android:text="Đăng xuất"
+                android:gravity="right"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="bottom"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/home1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nhaxamm" />
+
+        <ImageView
+            android:id="@+id/tym1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="2dp"
+            app:srcCompat="@drawable/tymxxamm" />
+
+        <ImageView
+            android:id="@+id/gio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ghxam" />
+
+        <ImageView
+            android:id="@+id/nguoi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="-4dp"
+            app:srcCompat="@drawable/nguoidoo" />
+    </LinearLayout>
+
+</LinearLayout>

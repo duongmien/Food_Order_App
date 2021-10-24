@@ -38,20 +38,31 @@ public class FoodAdapter extends BaseAdapter {
         return 0;
     }
 
+    private class   ViewHolder{
+        ImageView image1, image2;
+        TextView txtname1, txtname2;
+    }
+
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view= inflater.inflate(layout,null);
+
         //anh xa view
-        TextView txtname=(TextView) view.findViewById(R.id.thucuong);
-        ImageView image= (ImageView) view.findViewById(R.id.menu_item);
+        TextView txtname1=(TextView) view.findViewById(R.id.thucuong);
+        ImageView image1= (ImageView) view.findViewById(R.id.menu_item);
+        TextView txtname2=(TextView) view.findViewById(R.id.garan);
+        ImageView image2= (ImageView) view.findViewById(R.id.menu_item1);
         //gan gia tri
         Food food = foodList.get(i);
-  txtname.setText(food.getName());
-  image.setImageResource(food.getImage());
+        txtname1.setText(food.getName1());
+        image1.setImageResource(food.getImage1());
+        txtname2.setText(food.getName2());
+        image2.setImageResource(food.getImage2());
 
 
 
         return view;
     }
 }
+
