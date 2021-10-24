@@ -23,7 +23,7 @@
                     android:layout_width="148dp"
                     android:layout_height="172dp"
                     android:layout_marginLeft="26dp"
-                    android:src="@drawable/swvietquat" />
+                    android:src="@drawable/sodachanh" />
 
                 <TextView
                     android:id="@+id/ten1"
@@ -32,7 +32,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="20dp"
                     android:fontFamily="@font/dancingscript"
-                    android:text="Sandwish Việt quất"
+                    android:text="Soda chanh bạc hà"
                     android:textColor="#FF6838"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -49,7 +49,7 @@
                     android:layout_width="148dp"
                     android:layout_height="172dp"
                     android:layout_marginLeft="30dp"
-                    android:src="@drawable/pizzahaisan" />
+                    android:src="@drawable/sinhtohoaqua" />
 
                 <TextView
                     android:id="@+id/ten2"
@@ -58,7 +58,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="10dp"
                     android:fontFamily="@font/dancingscript"
-                    android:text="Pizza Hải sản"
+                    android:text="Sinh tố hoa quả"
                     android:textColor="#FF6838"
                     android:textSize="20dp" />
             </LinearLayout>

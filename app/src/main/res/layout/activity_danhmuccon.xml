@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DanhSachMon">
+    tools:context=".DanhMucCon">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,38 +20,6 @@
             android:layout_marginTop="43dp"
             android:src="@drawable/back" />
 
-        <LinearLayout
-            android:layout_width="260dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/bg_box_search"
-            android:gravity="center">
-
-            <ImageView
-                android:id="@+id/search"
-                android:layout_width="33dp"
-                android:layout_height="41dp"
-                android:src="@drawable/search" />
-
-            <TextView
-                android:id="@+id/noidungtimkiem"
-                android:layout_width="210dp"
-                android:layout_height="30dp"
-                android:hint="Tìm món ở đây..."
-                android:paddingLeft="35dp"
-                android:textColor="@color/black"
-                android:textSize="20dp" />
-
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/speak"
-            android:layout_width="33dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/speak" />
 
     </LinearLayout>
     <LinearLayout
@@ -76,9 +44,9 @@
     </LinearLayout>
 
     <ListView
-        android:id="@+id/dsmonan"
-        android:layout_width="wrap_content"
-        android:layout_height="431dp"
+        android:id="@+id/danhmuc"
+        android:layout_width="387dp"
+        android:layout_height="429dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="26dp" />

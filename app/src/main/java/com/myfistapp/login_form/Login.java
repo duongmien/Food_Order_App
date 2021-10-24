@@ -87,7 +87,7 @@ public class Login extends AppCompatActivity {
         loginDC.setOnClickListener(new View.OnClickListener() {
             @Override
            public void onClick(View view) {
-               Intent intent = new Intent(Login.this, TimKiemDung.class);
+               Intent intent = new Intent(Login.this, DanhMucCon.class);
                startActivity(intent);
                 finish();
            }
