@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="128dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/banner_monan">
+
+            <ImageView
+                android:id="@+id/hinh1"
+                android:layout_width="100dp"
+                android:layout_height="103dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/hbgbo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="128dp"
+                android:background="@drawable/banner_monan"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ten1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Hamburger bò với tương ớt vị Caranbery"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/hinh2"
+                    android:layout_width="121dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_star"
+                    android:src="@drawable/star" />
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="-20dp"
+                    android:textColor="@color/mauvang">
+
+                    <TextView
+                        android:id="@+id/ten2"
+                        android:layout_width="33dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/bg_congtru"
+                        android:gravity="center_horizontal"
+                        android:text="-"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ten3"
+                        android:layout_width="33dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/bg_congtru"
+                        android:gravity="center_horizontal"
+                        android:text="1"
+                        android:textColor="@color/camdam"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ten4"
+                        android:layout_width="33dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/bg_congtru"
+                        android:gravity="center_horizontal"
+                        android:text="+"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ten7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="59,000đ"
+                    android:textColor="@color/camdam"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ten5"
+                    android:layout_width="99dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/banner_con1"
+                    android:gravity="center"
+                    android:text="Ship miễn phí"
+                    android:textColor="@color/purple_500" />
+
+                <TextView
+                    android:id="@+id/ten6"
+                    android:layout_width="89dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="-30dp"
+                    android:background="@drawable/banner_con2"
+                    android:gravity="center"
+                    android:text="Giảm 3%"
+                    android:textColor="@color/maudo" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
